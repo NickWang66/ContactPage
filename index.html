@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Nick Wang Portfolio</title>
+    <title>Contact - Nick Wang Portfolio</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-image: url('Background.jpg'); /* Background image */
+            background-image: url('Background2.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
-            color: #fff; /* White text for readability */
+            color: #fff;
+            text-align: center;
         }
 
         .navbar {
@@ -21,7 +22,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
-            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black navbar */
+            background-color: rgba(0, 0, 0, 0.8); 
             color: #fff;
         }
 
@@ -43,39 +44,52 @@
             font-size: 1.5em;
         }
 
-        section {
-            padding: 40px 20px;
-            margin: 20px;
-            background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
-            border-radius: 10px;
-            max-width: 800px;
-            margin: 20px auto; /* Center section */
-        }
-
-        h2 {
-            font-size: 1.8em;
-            border-bottom: 2px solid #fff; /* Underline for headings */
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+        h1 {
+            font-size: 2.6em;
+            margin: 40=px 0 20px 0;
+            font-family: Arial, sans-serif;
             text-transform: uppercase;
         }
 
+        h1 span {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            border-radius: 20px; /* Rounded corners for the banner */
+            color: #000;
+            border: 2px solid #000; /* Border for added emphasis */
+        }
+
         p {
-            font-size: 1em;
-            line-height: 1.6;
-            margin-bottom: 20px;
+            font-size: 1.2em;
+            margin: 20px 0;
         }
 
-        .section-heading {
-            margin-top: 40px;
+        a.email-link {
+            color: #00bfff;
+            font-weight: bold;
+            text-decoration: none;
         }
 
-        .skills-image {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 20px auto 0 auto; /* Center image */
-            border-radius: 10px; /* Optional rounded corners */
+        a.email-link:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .social-icons img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -94,34 +108,17 @@
         </div>
     </header>
     
-    <section>
-        <h2>About Me</h2>
-        <p>
-            Hi, I’m Nick Wang, a second-year Global Business and Digital Arts (GBDA) student with a passion for crafting innovative and user-centered design solutions. My journey in design and media has been shaped by a mix of academic learning, professional experiences, and a keen interest in creative storytelling.
-        </p>
-    </section>
-
-    <section class="section-heading">
-        <h2>My Background</h2>
-        <p>
-            From September 2023 to June 2024, I worked in the Media Department at Waterloo Independent Secondary School (WISS). My role involved capturing the essence of school life as a photographer, creating posters, promotional videos, and event graphics, and sharing these across platforms like Instagram, Twitter, and Facebook. This experience honed my ability to tell compelling visual stories and effectively manage content for social media audiences.
-        </p>
-    </section>
-
-    <section class="section-heading">
-        <h2>My Skills and Expertise</h2>
-        <p>
-            Throughout my academic and professional journey, I’ve mastered tools like Photoshop, Illustrator, Premiere Pro, InDesign, and Audition from Creative Cloud. Additionally, I have experience leveraging Generative AI tools to enhance creative workflows and streamline content production. These technical skills, combined with my leadership experience as a project leader in university, enable me to guide teams to successfully execute complex design projects.
-        </p>
-        <!-- Add the Cloud.png image -->
-        <img src="Cloud.png" alt="Cloud Design Concept" class="skills-image">
-    </section>
-
-    <section class="section-heading">
-        <h2>Working Style</h2>
-        <p>
-            I thrive in collaborative environments where ideas are shared and refined. As a leader, I prioritize clear communication and structured planning, ensuring every team member contributes to and aligns with the project’s vision. At the same time, I value independent work, utilizing creativity and problem-solving to produce results that exceed expectations.
-        </p>
-    </section>
+    <main>
+        <h1><span>Let's Work Together !!!</span></h1>
+        <p>Feel free to reach out for collaboration, inquiries, or <a href="#say-hi" class="email-link">just to say Hi!</a></p>
+        <p>Email: <a href="mailto:n27wang@gmail.com" class="email-link">n27wang@gmail.com</a></p>
+        <div class="social-icons">
+            <img src="Instagram.jpg" alt="Instagram">
+            <img src="Facebook.jpg" alt="Facebook">
+            <img src="Tiktok.png" alt="TikTok">
+            <img src="Youtube.png" alt="YouTube">
+            <img src="Twitter.jpg" alt="Twitter">
+        </div>
+    </main>
 </body>
 </html>
